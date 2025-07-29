@@ -9,7 +9,7 @@ function App() {
   const [isMountedFunc, setIsMountedFunc] = useState(false);
 
   return (
-    <>
+    <main>
       <div>
         <h1>React Component Life Cycle Imagined Using Classes/Functional Components</h1>
       </div>
@@ -35,7 +35,7 @@ function App() {
         {isMountedFunc && <LifeCycleLoggerFunc />}
       </div>
       
-    </>
+    </main>
   )
 }
 

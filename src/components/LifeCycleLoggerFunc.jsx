@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const LifeCycleLoggerFunc = () => {
     const [count, setCount] = useState(0);
@@ -28,7 +28,7 @@ const LifeCycleLoggerFunc = () => {
 
   return (
     <div>
-        <h2>Functional Component Mounted</h2>
+        <h2>Functional Component Mounted ✅</h2>
         <p>count: {count}</p>
         <button
             onClick={increment}
