@@ -12,7 +12,7 @@ class LifeCycleLoggerClass extends Component {
         console.log('class component has mounted...')
     }
 
-    incriment = () => {
+    increment = () => {
         this.setState({count: this.state.count + 1});
      }
 
@@ -31,9 +31,9 @@ class LifeCycleLoggerClass extends Component {
                 <h2>Class Component Mounted ✅</h2>
                 <p>Count: {this.state.count}</p>
                 <button
-                    onClick={this.incriment}
+                    onClick={this.increment}
                 >
-                    incriment
+                    increment
                 </button>
             </div>
 

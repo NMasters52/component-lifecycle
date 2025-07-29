@@ -1,10 +1,12 @@
 import { useState } from "react";
 import LifeCycleLoggerClass from "./components/LifeCycleLoggerClass"
+import LifeCycleLoggerFunc from "./components/LifeCycleLoggerFunc";
 
 
 
 function App() {
   const [isMountedClass, setIsMountedClass] = useState(false);
+  const [isMountedFunc, setIsMountedFunc] = useState(false);
 
   return (
     <>
@@ -24,7 +26,13 @@ function App() {
       </div>
 
       <div className='functional-container'>
-        <h3>Place Holder for functional</h3>
+        <h3>Functional Component</h3>
+        <button
+          onClick={() => setIsMountedFunc(!isMountedFunc)}
+        >
+          {isMountedFunc === true ? 'unmount component' : 'mount component'}
+        </button>
+        {isMountedFunc && <LifeCycleLoggerFunc />}
       </div>
       
     </>
